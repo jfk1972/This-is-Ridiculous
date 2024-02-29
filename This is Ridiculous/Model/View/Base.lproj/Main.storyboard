@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lfy-mm-OJd">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -17,37 +16,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="x0c-0n-9qb">
-                                <rect key="frame" x="16" y="20" width="288" height="513.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="x0c-0n-9qb">
+                                <rect key="frame" x="16" y="20" width="288" height="485"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="52g-ob-MZF">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appstore" translatesAutoresizingMaskIntoConstraints="NO" id="52g-ob-MZF">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="MRb-BR-pmc"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5B-Vx-Tdt">
-                                        <rect key="frame" x="0.0" y="153" width="288" height="297.5"/>
+                                        <rect key="frame" x="0.0" y="165" width="288" height="245"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="250" id="ZAP-Dn-o4N"/>
                                         </constraints>
-                                        <string key="text">The number of correctly answered questions and progress will appear below the image.
+                                        <string key="text">When playing, the number of correctly answered questions and your progress will appear below the image.
 
 When you answer a question correctly, the button will momentarily turn GREEN. When you answer an answer incorrectly, the button will momentarily turn RED. In addition, the CORRECT RESPONSE will be displayed in the Question area of the screen.
 
 After you answer the last question, the game will be reset and start over.</string>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdy-pH-9Tl">
-                                        <rect key="frame" x="0.0" y="453.5" width="288" height="60"/>
+                                        <rect key="frame" x="0.0" y="425" width="288" height="60"/>
                                         <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="rC7-iC-lOb"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                        <buttonConfiguration key="configuration" style="plain" title="Play">
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -74,23 +73,23 @@ After you answer the last question, the game will be reset and start over.</stri
         <!--MainViewController-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController title="MainViewController" id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController title="MainViewController" id="Y6W-OH-hqX" customClass="MainViewController" customModule="This_is_Ridiculous" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="PGD-wh-DGX" userLabel="Main Stack View">
-                                <rect key="frame" x="35" y="10" width="250" height="530"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PGD-wh-DGX" userLabel="Main Stack View">
+                                <rect key="frame" x="35" y="10" width="250" height="519"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appstore" translatesAutoresizingMaskIntoConstraints="NO" id="1yP-Us-ppS" userLabel="image">
-                                        <rect key="frame" x="0.0" y="0.0" width="250" height="100"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="125"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="40S-hN-o0B"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="125" id="40S-hN-o0B"/>
                                             <constraint firstAttribute="width" secondItem="1yP-Us-ppS" secondAttribute="height" priority="999" id="FeI-9o-KTV"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3TZ-Pa-Pnv" userLabel="Top Labels Stack View">
-                                        <rect key="frame" x="0.0" y="120" width="250" height="90"/>
+                                        <rect key="frame" x="0.0" y="133" width="250" height="90"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="3jv-AR-YxW" userLabel="Scores V Stack View">
                                                 <rect key="frame" x="0.0" y="0.0" width="250" height="90"/>
@@ -99,14 +98,14 @@ After you answer the last question, the game will be reset and start over.</stri
                                                         <rect key="frame" x="0.0" y="0.0" width="250" height="20.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Number Correct" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhX-xO-A2u">
-                                                                <rect key="frame" x="0.0" y="0.0" width="166" height="20.5"/>
-                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="175" height="20.5"/>
+                                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="scoreLabel" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Azr-Fi-I7n">
-                                                                <rect key="frame" x="166" y="0.0" width="84" height="20.5"/>
-                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <rect key="frame" x="175" y="0.0" width="75" height="20.5"/>
+                                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -116,20 +115,20 @@ After you answer the last question, the game will be reset and start over.</stri
                                                         <rect key="frame" x="0.0" y="43" width="250" height="20.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Question" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eg7-4a-Uu5">
-                                                                <rect key="frame" x="0.0" y="0.0" width="68.5" height="20.5"/>
-                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="64" height="20.5"/>
+                                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="scoreLabel2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oop-8i-B9K">
-                                                                <rect key="frame" x="68.5" y="0.0" width="141" height="20.5"/>
-                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <rect key="frame" x="64" y="0.0" width="149.5" height="20.5"/>
+                                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="of 50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GtA-YD-Xpd">
-                                                                <rect key="frame" x="209.5" y="0.0" width="40.5" height="20.5"/>
-                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="of 50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GtA-YD-Xpd">
+                                                                <rect key="frame" x="213.5" y="0.0" width="36.5" height="20.5"/>
+                                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -144,18 +143,20 @@ After you answer the last question, the game will be reset and start over.</stri
                                                 </constraints>
                                             </stackView>
                                         </subviews>
+                                        <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="questionLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HI4-1e-wrY">
-                                        <rect key="frame" x="0.0" y="230" width="250" height="100"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="questionLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HI4-1e-wrY">
+                                        <rect key="frame" x="0.0" y="231" width="250" height="100"/>
+                                        <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="LXY-ZF-nu2"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="z0k-AT-qXO" userLabel="Buttons V Stack View">
-                                        <rect key="frame" x="0.0" y="350" width="250" height="180"/>
+                                        <rect key="frame" x="0.0" y="339" width="250" height="180"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ru-Ef-reL">
                                                 <rect key="frame" x="0.0" y="0.0" width="250" height="58"/>
@@ -164,6 +165,9 @@ After you answer the last question, the game will be reset and start over.</stri
                                                 <buttonConfiguration key="configuration" style="plain" title="Choice1">
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="answerButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="6Dz-rg-HP3"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCq-yA-hr3">
                                                 <rect key="frame" x="0.0" y="60" width="250" height="57.5"/>
@@ -173,6 +177,7 @@ After you answer the last question, the game will be reset and start over.</stri
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
+                                                    <action selector="answerButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="v8K-fn-x1J"/>
                                                     <segue destination="spo-kh-uY8" kind="show" id="2IX-ea-x8h"/>
                                                 </connections>
                                             </button>
@@ -183,18 +188,23 @@ After you answer the last question, the game will be reset and start over.</stri
                                                 <buttonConfiguration key="configuration" style="plain" title="Choice3">
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="answerButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="4dL-ns-ZEZ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
+                                        <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="MNF-ND-arw"/>
                                             <constraint firstAttribute="height" constant="180" id="raq-ze-Xo8"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="PGD-wh-DGX" secondAttribute="bottom" constant="5" id="92D-RE-1ug"/>
                             <constraint firstItem="PGD-wh-DGX" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="DGT-qw-ZjG"/>
@@ -202,6 +212,15 @@ After you answer the last question, the game will be reset and start over.</stri
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ipc-Gy-ChQ"/>
+                    <connections>
+                        <outlet property="choice1" destination="1ru-Ef-reL" id="rFg-L3-Fws"/>
+                        <outlet property="choice2" destination="BCq-yA-hr3" id="7b8-SH-k5W"/>
+                        <outlet property="choice3" destination="Sl2-gf-d0x" id="RzG-qo-qzM"/>
+                        <outlet property="progressBar" destination="PLy-lD-eso" id="rT8-x4-Jfg"/>
+                        <outlet property="questionLabel" destination="HI4-1e-wrY" id="Wwh-Px-FoB"/>
+                        <outlet property="scoreLabel" destination="Azr-Fi-I7n" id="MIb-5N-3Eo"/>
+                        <outlet property="scoreLabel2" destination="Oop-8i-B9K" id="kvQ-9r-tYM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -214,21 +233,38 @@ After you answer the last question, the game will be reset and start over.</stri
                     <view key="view" contentMode="scaleToFill" id="b8e-op-2S4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appstore" translatesAutoresizingMaskIntoConstraints="NO" id="bcj-on-em8">
+                                <rect key="frame" x="-11" y="149" width="342" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="wdZ-uA-Nu3"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ahM-Ji-3rO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bcj-on-em8" firstAttribute="centerX" secondItem="b8e-op-2S4" secondAttribute="centerX" id="XpM-dm-Tpk"/>
+                            <constraint firstItem="bcj-on-em8" firstAttribute="centerY" secondItem="b8e-op-2S4" secondAttribute="centerY" id="rs7-kX-K5Y"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TeF-U0-GEL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eeO-dk-M1h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1012" y="-216"/>
+            <point key="canvasLocation" x="1010.625" y="-216.5492957746479"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="1024" height="1024"/>
         <image name="appstore" width="341.5" height="341.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

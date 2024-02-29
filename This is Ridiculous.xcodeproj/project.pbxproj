@@ -9,27 +9,29 @@
 /* Begin PBXBuildFile section */
 		CB85083E2B901B93006D2B8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB85083D2B901B93006D2B8A /* AppDelegate.swift */; };
 		CB8508402B901B93006D2B8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB85083F2B901B93006D2B8A /* SceneDelegate.swift */; };
-		CB8508422B901B93006D2B8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8508412B901B93006D2B8A /* ViewController.swift */; };
+		CB8508422B901B93006D2B8A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8508412B901B93006D2B8A /* MainViewController.swift */; };
 		CB8508452B901B93006D2B8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB8508432B901B93006D2B8A /* Main.storyboard */; };
 		CB8508472B901B97006D2B8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB8508462B901B97006D2B8A /* Assets.xcassets */; };
-		CB85084A2B901B97006D2B8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB8508482B901B97006D2B8A /* LaunchScreen.storyboard */; };
 		CB8508542B901CD5006D2B8A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8508532B901CD5006D2B8A /* Question.swift */; };
 		CB8508562B901CEE006D2B8A /* Quiz Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8508552B901CEE006D2B8A /* Quiz Engine.swift */; };
 		CB8508592B901D2A006D2B8A /* More Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8508582B901D2A006D2B8A /* More Questions.swift */; };
+		CB85085D2B90E3C4006D2B8A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB85085C2B90E3C4006D2B8A /* Launch Screen.storyboard */; };
+		CB85085F2B90E4E5006D2B8A /* Launch Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB85085E2B90E4E5006D2B8A /* Launch Screen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CB85083A2B901B93006D2B8A /* This is Ridiculous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "This is Ridiculous.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB85083D2B901B93006D2B8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB85083F2B901B93006D2B8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CB8508412B901B93006D2B8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB8508412B901B93006D2B8A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CB8508442B901B93006D2B8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB8508462B901B97006D2B8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CB8508492B901B97006D2B8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB85084B2B901B97006D2B8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB8508532B901CD5006D2B8A /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		CB8508552B901CEE006D2B8A /* Quiz Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quiz Engine.swift"; sourceTree = "<group>"; };
 		CB8508582B901D2A006D2B8A /* More Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "More Questions.swift"; sourceTree = "<group>"; };
+		CB85085C2B90E3C4006D2B8A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		CB85085E2B90E4E5006D2B8A /* Launch Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Launch Screen.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +69,6 @@
 				CB8508572B901CF9006D2B8A /* Model */,
 				CB85085B2B901DB2006D2B8A /* Controller */,
 				CB8508462B901B97006D2B8A /* Assets.xcassets */,
-				CB8508482B901B97006D2B8A /* LaunchScreen.storyboard */,
 				CB85084B2B901B97006D2B8A /* Info.plist */,
 			);
 			path = "This is Ridiculous";
@@ -88,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				CB8508432B901B93006D2B8A /* Main.storyboard */,
+				CB85085C2B90E3C4006D2B8A /* Launch Screen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -95,7 +97,8 @@
 		CB85085B2B901DB2006D2B8A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CB8508412B901B93006D2B8A /* ViewController.swift */,
+				CB8508412B901B93006D2B8A /* MainViewController.swift */,
+				CB85085E2B90E4E5006D2B8A /* Launch Screen.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -158,8 +161,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB85084A2B901B97006D2B8A /* LaunchScreen.storyboard in Resources */,
 				CB8508472B901B97006D2B8A /* Assets.xcassets in Resources */,
+				CB85085D2B90E3C4006D2B8A /* Launch Screen.storyboard in Resources */,
 				CB8508452B901B93006D2B8A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,7 +174,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB8508422B901B93006D2B8A /* ViewController.swift in Sources */,
+				CB8508422B901B93006D2B8A /* MainViewController.swift in Sources */,
+				CB85085F2B90E4E5006D2B8A /* Launch Screen.swift in Sources */,
 				CB8508542B901CD5006D2B8A /* Question.swift in Sources */,
 				CB8508562B901CEE006D2B8A /* Quiz Engine.swift in Sources */,
 				CB85083E2B901B93006D2B8A /* AppDelegate.swift in Sources */,
@@ -189,14 +193,6 @@
 				CB8508442B901B93006D2B8A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CB8508482B901B97006D2B8A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CB8508492B901B97006D2B8A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
