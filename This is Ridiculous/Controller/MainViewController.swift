@@ -89,8 +89,14 @@ class MainViewController: UIViewController {
         choice3.setTitle(answerChoices[2], for: .normal)
         
         progressBar.progress = quizEngine.getProgress()
-        scoreLabel.text = "Score: \(quizEngine.getScore())"
+     
+        scoreLabel.text = "\(quizEngine.getScore())"
+        scoreLabel2.text = "  \(quizEngine.questionNumber+1)   "
+        
+        
+    /*    scoreLabel.text = "Score: \(quizEngine.getScore())"
         scoreLabel2.text = "Question  \(quizEngine.questionNumber)  of  \(quizEngine.quiz.count-1)"
+        */
         
         choice1.backgroundColor = UIColor.clear
         choice2.backgroundColor = UIColor.clear
@@ -115,7 +121,7 @@ class MainViewController: UIViewController {
 //        fromController.present(alert, animated: true,
 //        completion: nil)
 //    }
-   
+    
 }
 
 

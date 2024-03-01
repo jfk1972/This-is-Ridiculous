@@ -112,7 +112,7 @@ After you answer the last question, the game will be reset and start over.</stri
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Izl-Bv-sYa" userLabel="Question Number H Stack View">
-                                                        <rect key="frame" x="0.0" y="43" width="250" height="20.5"/>
+                                                        <rect key="frame" x="0.0" y="35" width="250" height="20.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Question" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eg7-4a-Uu5">
                                                                 <rect key="frame" x="0.0" y="0.0" width="64" height="20.5"/>
@@ -126,7 +126,7 @@ After you answer the last question, the game will be reset and start over.</stri
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="of 50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GtA-YD-Xpd">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="of 30" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GtA-YD-Xpd">
                                                                 <rect key="frame" x="213.5" y="0.0" width="36.5" height="20.5"/>
                                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
                                                                 <nil key="textColor"/>
@@ -135,7 +135,10 @@ After you answer the last question, the game will be reset and start over.</stri
                                                         </subviews>
                                                     </stackView>
                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PLy-lD-eso">
-                                                        <rect key="frame" x="0.0" y="86" width="250" height="4"/>
+                                                        <rect key="frame" x="0.0" y="70" width="250" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="lBl-Ig-wef"/>
+                                                        </constraints>
                                                     </progressView>
                                                 </subviews>
                                                 <constraints>
@@ -143,11 +146,9 @@ After you answer the last question, the game will be reset and start over.</stri
                                                 </constraints>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="questionLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HI4-1e-wrY">
                                         <rect key="frame" x="0.0" y="231" width="250" height="100"/>
-                                        <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="LXY-ZF-nu2"/>
                                         </constraints>
@@ -178,7 +179,6 @@ After you answer the last question, the game will be reset and start over.</stri
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="answerButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="v8K-fn-x1J"/>
-                                                    <segue destination="spo-kh-uY8" kind="show" id="2IX-ea-x8h"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sl2-gf-d0x">
@@ -200,7 +200,6 @@ After you answer the last question, the game will be reset and start over.</stri
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -226,42 +225,11 @@ After you answer the last question, the game will be reset and start over.</stri
             </objects>
             <point key="canvasLocation" x="80.625" y="3.1690140845070425"/>
         </scene>
-        <!--GameOverViewController-->
-        <scene sceneID="ffp-YT-wMv">
-            <objects>
-                <viewController title="GameOverViewController" id="spo-kh-uY8" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="b8e-op-2S4">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appstore" translatesAutoresizingMaskIntoConstraints="NO" id="bcj-on-em8">
-                                <rect key="frame" x="-11" y="149" width="342" height="250"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="wdZ-uA-Nu3"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="ahM-Ji-3rO"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="bcj-on-em8" firstAttribute="centerX" secondItem="b8e-op-2S4" secondAttribute="centerX" id="XpM-dm-Tpk"/>
-                            <constraint firstItem="bcj-on-em8" firstAttribute="centerY" secondItem="b8e-op-2S4" secondAttribute="centerY" id="rs7-kX-K5Y"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="TeF-U0-GEL"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eeO-dk-M1h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1010.625" y="-216.5492957746479"/>
-        </scene>
     </scenes>
     <resources>
         <image name="appstore" width="341.5" height="341.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
